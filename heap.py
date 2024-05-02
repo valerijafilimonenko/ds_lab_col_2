@@ -65,7 +65,7 @@ def find_kth_smallest(nums, k):
     for numuri in nums:
 
         maksimums.insert(numuri)##ievietojam
-        if len(maksimums.heap) > k: ##vai kaudzes izmērs pārsniedz k
+        if len(maksimums.heap) > k: ###vai kaudzes izmērs pārsniedz k
             maksimums.remove()
 
     return maksimums.remove()
