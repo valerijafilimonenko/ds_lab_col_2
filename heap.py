@@ -61,11 +61,12 @@ def find_kth_smallest(nums, k):
 ###################################
 ##izveidojam klases gadījumu, tas inicializē tukšu maksimālo kaudze
     maksimums = MaxHeap() 
-#atkārtojam katru numuru numuri sarakstā nums
-    for numuri in nums:
 
+#atkārtojam katru numuru numuri  sarakstā nums
+    for numuri in nums:
         maksimums.insert(numuri)##ievietojam
-        if len(maksimums.heap) > k: ###vai kaudzes izmērs pārsniedz k
+        
+        if len(maksimums.heap) > k: 
             maksimums.remove()
 
     return maksimums.remove()
